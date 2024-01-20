@@ -1,0 +1,9 @@
+<section *ngIf="transactionList[0]" class="box">
+    <div class="child-box">
+        <h3>Transactions</h3>
+        <div  *ngFor="let each of transactionList" class="title-amount">
+            <p>{{each.title}}</p>
+            <p> Rs.{{each.amount}}</p>
+        </div>
+    </div>
+</section>
