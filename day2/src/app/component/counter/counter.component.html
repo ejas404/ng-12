@@ -9,7 +9,7 @@
 
     <!-- logs the btn actions -->
     <h3>Actions Log</h3>
-    <ul> @for(each of actionLogs; track $index){
+    <ul> @for(each of actionLogs(); track $index){
             <li>{{each}}</li>
         }
     </ul>
