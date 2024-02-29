@@ -1,0 +1,8 @@
+<main>
+    <section>
+        <h1>Select Your Seat</h1>
+        <div class="seat-lists">
+            <div (click)="select(i)" *ngFor="let each of arr; let i = index" class="seat {{each.selected? 'selected':'notselected'}} ">{{i+1}}</div>
+        </div>
+    </section>
+</main>
