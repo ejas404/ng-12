@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 })
 export class SeatListsComponent {
   arr : any = []
-  selectedList : number[] = [7]
+  selectedList : number[] = [7,8,1,2]
 
   ngOnInit(){
     for(let i = 0 ; i< 10;i++){
@@ -23,6 +23,7 @@ export class SeatListsComponent {
   }
 
   select (val : number){
+    if(this.selectedList.includes(val)) return;
     let check = this.arr[val]
     if(check.selected){
     this.arr[val] = {selected : false}
