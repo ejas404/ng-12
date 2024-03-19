@@ -1,0 +1,10 @@
+<main>
+    <section class="form-box">
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <input type="text" placeholder="name" formControlName="name">
+            <input type="email" placeholder="email"formControlName="email">
+            <input type="number" placeholder="enter your age" formControlName="age">
+            <button type="submit" [disabled]="!profileForm.valid" >Submit</button>
+        </form>
+    </section>
+</main>

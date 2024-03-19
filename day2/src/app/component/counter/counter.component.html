@@ -2,7 +2,8 @@
     <h1>Signals</h1>
 
     <!-- will shows the counter values -->
-    <p>Counter : {{counter()}}</p>
+    <p>Counter : {{counter()|decimalPipe}}</p>
+    <!-- <p>Counter : {{counter}}</p> -->
 
     <!-- button for incrementing and decrementing the counter -->
     <app-btn (click)="decrement()" >Decrement</app-btn> <app-btn (click)="increment()" >Increment</app-btn>

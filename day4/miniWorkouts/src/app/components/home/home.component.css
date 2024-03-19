@@ -1,0 +1,9 @@
+main{
+    min-height: 100vh;
+    background-color: black;
+    padding: 10px;
+}
+
+h3{
+    color: yellow;
+}
